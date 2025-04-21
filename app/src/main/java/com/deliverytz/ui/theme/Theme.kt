@@ -1,6 +1,5 @@
 package com.deliverytz.ui.theme
 
-import android.app.Activity
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.MaterialTheme
@@ -13,20 +12,25 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 
 private val DarkColorScheme = darkColorScheme(
-    primary = Gray,
-    onPrimary = Black,
-    secondary = Blue,
-    tertiary = Pink80,
-    onError = Color.Red
+    primary = LightBlue,
+    onPrimary = White,
+    secondary = LightSoftGray,
+    secondaryContainer = DefaultGray,
+    onSecondaryContainer = LightStrongGray,
+    onSecondary =  OnLightSoftGray,
+    tertiary = WhiteGray,
+    error = Color.Red,
 )
 
 private val LightColorScheme = lightColorScheme(
-    primary = Gray,
-    onPrimary = Black,
-    secondary = Blue,
-    onSecondary = White,
-    tertiary = Pink40,
-    onError = Color.Red
+    primary = Blue,
+    onPrimary = White,
+    secondary = SoftGray,
+    secondaryContainer = LightGray,
+    onSecondaryContainer = SoftGray,
+    onSecondary = Black,
+    tertiary = StrongGray,
+    error = Color.Red,
 
     /* Other default colors to override
     background = Color(0xFFFFFBFE),
